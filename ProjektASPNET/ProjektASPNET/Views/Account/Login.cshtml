@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "View";
+}
+
+<form method="post">
+
+    <div>
+        Login: @Html.TextBoxFor( m => m.UserName )
+        @Html.ValidationMessageFor( m => m.UserName )
+    </div>
+    <div>
+        Password: @Html.TextBoxFor( m => m.Password )
+        @Html.ValidationMessageFor( m => m.Password )
+    </div>
+    <div>
+        <button>Logon</button>
+    </div>
+    @if (this.ViewBag.Message != null) {
+        <div>
+            @this.ViewBag.Message
+        </div>
+    }
+
+</form>
+

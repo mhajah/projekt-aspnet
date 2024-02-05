@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using ProjektASPNET.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
